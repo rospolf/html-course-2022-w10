@@ -1,0 +1,21 @@
+{
+  "name": "html-intro-course",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "htmlhint": "^1.1.2",
+    "http-server": "^14.1.0",
+    "stylelint": "^14.5.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0"
+  },
+  "scripts": {
+    "stylelint-check": "stylelint-config-prettier-check",
+    "stylelint": "stylelint 'src/**/*.css'",
+    "htmlhint": "htmlhint 'src/**/*.html'",
+    "serve": "http-server -p 9000 'src'",
+    "watch": "browser-sync start --server 'src' --files 'src' --no-ui --no-open --port 9000"
+  }
+}

@@ -1,0 +1,27 @@
+tasks:
+  - name: Install
+    init: npm install
+    command: npm run serve
+
+ports:
+  - port: 9000
+    onOpen: open-preview
+
+gitConfig:
+  alias.co: checkout
+  alias.br: branch
+  alias.ci: commit
+  alias.st: status
+  pull.rebase: merges
+
+vscode:
+  extensions:
+    - vtrois.gitmoji-vscode
+    - EditorConfig.EditorConfig
+    - stylelint.vscode-stylelint
+    - esbenp.prettier-vscode
+    - usernamehw.errorlens
+    - mkaufman.HTMLHint
+    - deque-systems.vscode-axe-linter
+
+
